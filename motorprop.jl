@@ -198,7 +198,7 @@ function steadylevelsweep(m::motordef, p::propdef, ac::acdef, Vmin, Vmax, Omegam
 
     figure()
     plot(Vvec, throttle)
-    xlabel("flight speed")
+    xlabel("flight speed (m/s)")
     ylabel("throttle")
     ylim([0, 1])
 
@@ -206,7 +206,7 @@ function steadylevelsweep(m::motordef, p::propdef, ac::acdef, Vmin, Vmax, Omegam
     plot(Vvec, etam)
     plot(Vvec, etap)
     plot(Vvec, etam.*etap)
-    xlabel("flight speed")
+    xlabel("flight speed (m/s)")
     ylabel("efficiency")
     legend(["motor", "prop", "combined"])
     ylim([0, 1])
@@ -214,19 +214,19 @@ function steadylevelsweep(m::motordef, p::propdef, ac::acdef, Vmin, Vmax, Omegam
 
     figure()
     plot(Vvec, OmegaRPM)
-    xlabel("flight speed")
-    ylabel("Omega")
+    xlabel("flight speed (m/s)")
+    ylabel("Omega (RPM)")
     ylim([0, Omegamax])
 
     figure()
     plot(Vvec, current)
-    xlabel("flight speed")
+    xlabel("flight speed (m/s)")
     ylabel("motor current (amps)")
     ylim([0, imax])
 
     figure()
     plot(Vvec, Tp)
-    xlabel("flight speed")
+    xlabel("flight speed (m/s)")
     ylabel("Thrust per motor (N)")
     ylim([0, Tmax])
 
