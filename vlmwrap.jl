@@ -41,6 +41,7 @@ function simpleversion(AR, λ, Λ, θr, θt, α)
     plot(ymid/b, l)
     plot(ymid/b, cl)
     # plot([0, 0.5], [clmax, clmax], "k--")
+    ylim([0, 1.3])
     xlabel("y/b")
     legend(["lift", "cl"])
 
@@ -154,5 +155,5 @@ end
 # alpha = 9.0*pi/180
 # clmax = 1.3
 
-# morecomplexversion(xle, yle, zle, chord, theta, npanels, alpha, clmax)
+# wing(xle, yle, zle, chord, theta, npanels, alpha, clmax)
 # gcf()
