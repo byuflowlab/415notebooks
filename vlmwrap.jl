@@ -112,6 +112,7 @@ function analyzewing(wing, Sref, cref, bref, rcg, alpha, clmax)
     plot(ymid/bref, l)
     plot([0, 0.5], [clmax, clmax], "k--")
     xlabel("y/b")
+    ylim([0, clmax+0.1])
     legend(["lift", "cl"])
 
     println("")
